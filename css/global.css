@@ -9,11 +9,10 @@
 
 body{
 
-   background-color: rgb(233, 227, 227);
-   font-family: Georgia, 'Times New Roman', Times, serif;
+
    transition: all 0.15s ease-in-out;
-   color: lightgray;
-  
+
+
 }
 
 .background-image{
@@ -33,3 +32,49 @@ body{
  }
 
 
+ .hero-section {
+   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/images/background-image.webp) no-repeat center center/cover;
+   color: white;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .intro-text h1 {
+   font-size: 3rem;
+   font-weight: bold;
+ }
+
+ .projects .card {
+   transition: transform 0.3s ease;
+ }
+
+ .projects .card:hover {
+   transform: scale(1.05);
+ }
+
+ .navbar-brand {
+   font-weight: bolder;
+   font-size: 1.5rem;
+   color: #f8f9fa !important;
+ }
+
+
+
+
+
+ .footer-icons i {
+   font-size: 1.5rem;
+   color: #ffc107;
+   margin: 0 10px;
+ }
+
+ .projects-container {
+
+    border-left: 3px solid  #ffc107;;
+ }
+ .projects .card{
+
+    width:25rem;
+ }
