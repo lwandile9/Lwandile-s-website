@@ -1,24 +1,23 @@
 *{
-
-    border: 0;
+    border: none;
+    margin: 0;
     list-style: none;
     padding: 0;
     text-decoration: none;
-
 }
 
 body{
 
-
    transition: all 0.15s ease-in-out;
-
-
+   font-family: "Roboto", system-ui;
+   font-weight: 700;
+   font-style: normal;
+   
 }
 
 .background-image{
    background-image: url(../assets/images/background-image.webp);
  
-   
  }
 
  .card{
@@ -78,3 +77,74 @@ body{
 
     width:25rem;
  }
+
+
+
+
+
+ 
+ .progress-name{
+
+   position: absolute;
+   padding-left: 4px;
+   text-align: center;
+
+
+ }
+
+ .image-effect{
+
+   width: 17.5rem;
+   border-radius: 50%;
+   border: 5px solid  #1a1919;
+   overflow: hidden;
+   text-align: center;
+   margin: 0 auto;
+   box-shadow: 5px 6px 15px rgba(235, 179, 12, 0.4);
+  
+
+ }
+
+
+
+
+
+
+ /*** animations ***/
+ 
+
+ #breathing-effect {
+  
+  animation: breathing 4s ease-out infinite normal;
+  text-align: center;    
+  }
+
+
+
+@keyframes breathing {
+0% {
+ 
+  transform: scale(0.9);
+  box-shadow: 3px 6px 15px rgba(121, 109, 44, 0.2);
+}
+
+25% {
+  
+  transform: scale(1);
+  box-shadow: 6px 8px 15px rgba(231, 198, 12, 0.4);
+}
+
+60% {
+  
+  transform: scale(0.9);
+ 
+  box-shadow: 5px 6px 15px rgba(158, 126, 29, 0.4);
+  
+}
+
+100% {
+
+  transform: scale(0.9);
+  box-shadow: 5px 6px 15px rgba(48, 40, 16, 0.3);
+}
+}
