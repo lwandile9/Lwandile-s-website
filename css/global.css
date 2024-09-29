@@ -47,7 +47,7 @@ body {
 }
 
 .intro-text h1 {
-  font-size: 3rem;
+  font-size: 2.7rem;
   font-weight: bold;
 }
 
@@ -213,7 +213,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   background-color: #f07026;
-  /* Bootstrap primary color */
+
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -223,7 +223,7 @@ body {
 .timeline-content {
   padding: 1rem;
   background-color: #50504e98;
-  /* Light background */
+
   border: 3px solid #f08c52;
   border-radius: .25rem;
   position: relative;
