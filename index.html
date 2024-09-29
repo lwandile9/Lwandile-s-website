@@ -32,6 +32,9 @@
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#work-experience">My journey</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
         </ul>
@@ -40,16 +43,16 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero-section text-center text-light" id="intro" data-aos="fade-down">
+  <section class="hero-section text-center text-light" id="intro" data-aos="fade-down" data-aos-once="false">
     <div class="container">
       <div class="row">
-        <div data-aos="flip-left" class="col-md-7 intro-text">
+        <div data-aos="flip-left" data-aos-once="false" class="col-md-7 intro-text">
           <h1>I am Lwandile Toto, a Full-Stack Developer</h1>
           <p>Let's bring your ideas to life with creativity, efficiency, and the power of technology.</p>
           <a href="#contact" class=" button-color-move btn btn-lg  btn-outline-warning ">Hire Me</a>
         </div>
         <div class="col-md-5">
-          <div data-aos="rotate-left" id="breathing-effect" class="image-effect">
+          <div data-aos="rotate-right" data-aos="flip-left" data-aos-delay="100" id="breathing-effect" class="image-effect">
             <img src="./assets/images/lwandile-profil-removebg-preview.png" alt="Lwandile's picture" class="img-fluid">
 
           </div>
@@ -166,27 +169,45 @@
   </section>
 
   <!-- work-experience -->
-  <section id="work-experience text-dark" class="container my-5">
+  <section data-aos-once="false" id="work-experience" class="container my-5">
 
-  <h2 class="text-center mb-4">My Work Experience</h2>
+  <h2 class="text-center mb-4">My Journey</h2>
   <div class="timeline">
-    <div class="timeline-item" data-aos="fade-up">
+    <div class="timeline-item" data-aos="fade-up" data-aos-once="false">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <h3>Freelance Web Developer</h3>
-        <span>2022 - Present</span>
+        <h3>Full stack developer intern</h3>
+        <span class="text-warning">CAPACITI: 2024/08/02 - Present</span>
         <p>Developed websites and web applications using JavaScript, PHP, and MySQL. Specialized in user login systems, dynamic content, and performance optimization.</p>
       </div>
     </div>
-    <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+    <div class="timeline-item" data-aos="fade-up" data-aos-once="false" data-aos-delay="100">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <h3>Technical Support (Freelance)</h3>
-        <span>2020 - Present</span>
-        <p>Provided local technical support services, troubleshooting various hardware and software issues, and assisting with student assignments.</p>
+        <h3>Data Capturer</h3>
+        <span  class="text-warning" >IEC: 2024/04/01 - 2024/04/20</span>
+        <p>Assisted Nyandeni local municipality in 2024 election to successful capture over 500 home visit application and section 24A applications into the system.</p>
       </div>
     </div>
-    <!-- Add more experiences as needed -->
+
+    <div class="timeline-item" data-aos="fade-up" data-aos-once="false" data-aos-delay="100">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>Diploma Systems Development</h3>
+        <span  class="text-warning">Boston City Campus (2023)</span>
+        <p >Program emphasizing Java programming and IT technical support, equipping students with essential skills in software development, systems analysis, and troubleshooting. </p>
+      </div>
+    </div>
+    <div class="timeline-item" data-aos="fade-up" data-aos-once="false" data-aos-delay="100">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>Grade 12</h3>
+        
+        <span  class="text-warning">Ndamase S.S.S (2017)</span>
+        <p>During my time at Ndamase S.S.S from Grade 10 to Grade 12, I studied Physical Sciences, Mathematics, Agricultural Sciences, Life Sciences, English (FL), IsiXhosa (HL), and Life Orientation. This diverse curriculum equipped me with a strong foundation in the sciences and languages, fostering analytical thinking and problem-solving skills.</p>
+      </div>
+    </div>
+    
   </div>
 </section>
 
@@ -248,7 +269,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="contact-form py-5" id="contact">
+  <section class="contact-form py-5" id="contact" data-aos-once="false">
     <div class="container">
       <h2 class="text-center">Leave a Message</h2>
       <form action="./form-processor.html" method="POST" class="mx-auto" style="max-width: 600px;">
