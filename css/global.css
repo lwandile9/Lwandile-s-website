@@ -88,7 +88,7 @@ body {
 
  .different-color-text{
 
-  color: #ffc107;
+  color: #ff7e5f;
 
  }
 
@@ -100,13 +100,13 @@ body {
 .progress-name {
 
   position: absolute;
-  padding-left: 4px;
+  padding-left: 3px;
   text-align: center;
-
 
 }
 
 .image-effect {
+  width: 17.5rem;
   width: 17.5rem;
   border-radius: 50%;
   overflow: hidden;
@@ -191,10 +191,11 @@ body {
 
 
 
-/* work */
+/* work exp */
 .timeline {
   position: relative;
   padding: 2rem 0;
+  
 }
 
 .timeline::before {
@@ -212,6 +213,7 @@ body {
 .timeline-item {
   position: relative;
   margin-bottom: 2rem;
+  z-index: 10;
 }
 
 .timeline-dot {
@@ -244,3 +246,79 @@ body {
 .timeline-item:nth-child(odd) .timeline-content {
   left: 0;
 }
+
+.btn-submit-message{
+
+  background-color: #f08c52;
+}
+
+
+/*  media queries */
+
+@media screen and (max-width: 600px) {
+
+  .timeline::before {
+    background-color: #ff7e5f;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 4px;
+    z-index: 1;
+    background: #f7ab71;
+  }
+
+  .timeline-dot {
+    
+    left:50%;
+    top:-9.5%;
+    transform: translateX(-50%);
+    background-color: #f07026;
+  
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+  }
+
+  .timeline-content {
+    padding: 0.5rem;
+    background-color: #16161698;
+    
+    border: 3px solid #f08c52;
+    border-radius: .25rem;
+    position: relative;
+    width: 90%;
+    color: rgba(232, 232, 232, 0.988);
+    z-index: 12;
+   
+  }
+  
+  .timeline-item:nth-child(even) .timeline-content {
+    left:2%;
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-content {
+    left: 2%;
+  }
+
+  .tech-stack{
+
+
+      padding-left: 0.8rem;
+    
+      padding-right: 0.8rem;
+    
+      
+  }
+
+  .image-effect {
+    width: 12.5rem;
+    height:12.5rem ;
+    margin-top: 2rem;
+    
+  }
+  
+
+}
+
+
