@@ -36,6 +36,11 @@ body {
   margin: 0 auto;
 }
 
+.card-text {
+
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
 
 .hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/images/background-image.webp) no-repeat center center/cover;
@@ -87,11 +92,11 @@ body {
   border: 3px solid #f08c52;
 }
 
- .different-color-text{
+.different-color-text {
 
   color: #ff7e5f;
 
- }
+}
 
 
 
@@ -196,7 +201,7 @@ body {
 .timeline {
   position: relative;
   padding: 2rem 0;
-  
+
 }
 
 .timeline::before {
@@ -248,7 +253,7 @@ body {
   left: 0;
 }
 
-.btn-submit-message{
+.btn-submit-message {
 
   background-color: #f08c52;
 }
@@ -269,12 +274,12 @@ body {
   }
 
   .timeline-dot {
-    
-    left:50%;
-    top:-9.5%;
+
+    left: 50%;
+    top: -9.5%;
     transform: translateX(-50%);
     background-color: #f07026;
-  
+
     border-radius: 50%;
     width: 20px;
     height: 20px;
@@ -284,42 +289,40 @@ body {
   .timeline-content {
     padding: 0.5rem;
     background-color: #16161698;
-    
+
     border: 3px solid #f08c52;
     border-radius: .25rem;
     position: relative;
     width: 90%;
     color: rgba(232, 232, 232, 0.988);
     z-index: 12;
-   
+
   }
-  
+
   .timeline-item:nth-child(even) .timeline-content {
-    left:2%;
+    left: 2%;
   }
-  
+
   .timeline-item:nth-child(odd) .timeline-content {
     left: 2%;
   }
 
-  .tech-stack{
+  .tech-stack {
 
 
-      padding-left: 0.8rem;
-    
-      padding-right: 0.8rem;
-    
-      
+    padding-left: 0.8rem;
+
+    padding-right: 0.8rem;
+
+
   }
 
   .image-effect {
     width: 12.5rem;
-    height:12.5rem ;
+    height: 12.5rem;
     margin-top: 2rem;
-    
+
   }
-  
+
 
 }
-
-
