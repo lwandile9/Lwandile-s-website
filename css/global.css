@@ -196,12 +196,10 @@ body {
 
 
 
-
-/* work exp */
+/* Work Experience Timeline */
 .timeline {
   position: relative;
   padding: 2rem 0;
-
 }
 
 .timeline::before {
@@ -213,7 +211,7 @@ body {
   height: 100%;
   width: 4px;
   background: #f7ab71;
-  /* Grey line */
+  /* Timeline line color */
 }
 
 .timeline-item {
@@ -227,7 +225,6 @@ body {
   left: 50%;
   transform: translateX(-50%);
   background-color: #f07026;
-
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -237,9 +234,8 @@ body {
 .timeline-content {
   padding: 1rem;
   background-color: #50504e98;
-
   border: 3px solid #f08c52;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   position: relative;
   width: 45%;
   color: rgba(232, 232, 232, 0.988);
@@ -253,36 +249,47 @@ body {
   left: 0;
 }
 
+/* Button */
 .btn-submit-message {
-
   background-color: #f08c52;
 }
 
-
-/*  media queries */
+/* Media Queries - Mobile View */
 @media (max-width: 650px) {
   .timeline {
-    position: relative;
     padding-left: 20px;
-    /* Add space for the dots on the left */
   }
 
-  .timeline-item {
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
-    /* Remove left padding */
+  .timeline::before {
+    left: 20px;
+    /* Line on the left for mobile */
+    transform: translateX(0);
+    /* Align to the left */
   }
 
   .timeline-dot {
-    position: absolute;
     left: 10px;
-    /* Align the dot close to the left edge */
-    top: 0;
+    /* Dot aligned to the left of the line */
+    transform: translateX(0);
+    top: 10px;
+    /* Align dot vertically */
+  }
+
+  .timeline-item {
+    display: block;
+    width: 100%;
   }
 
   .timeline-content {
-    padding-left: 40px;
-    /* Ensure content has space from the dot */
+    width: calc(100% - 50px);
+    /* Ensure content has space from the line */
+    margin-left: 40px;
+    /* Shift content to the right */
+    padding-left: 20px;
+  }
+
+  .timeline-item:nth-child(even) .timeline-content,
+  .timeline-item:nth-child(odd) .timeline-content {
+    left: 0;
   }
 }
