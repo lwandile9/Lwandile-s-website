@@ -260,69 +260,29 @@ body {
 
 
 /*  media queries */
+@media (max-width: 650px) {
+  .timeline {
+    position: relative;
+    padding-left: 20px;
+    /* Add space for the dots on the left */
+  }
 
-@media screen and (max-width: 600px) {
-
-  .timeline::before {
-    background-color: #ff7e5f;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 100%;
-    width: 4px;
-    z-index: 1;
-    background: #f7ab71;
+  .timeline-item {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    /* Remove left padding */
   }
 
   .timeline-dot {
-
-    left: 50%;
-    top: -9.5%;
-    transform: translateX(-50%);
-    background-color: #f07026;
-
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    z-index: 1;
+    position: absolute;
+    left: 10px;
+    /* Align the dot close to the left edge */
+    top: 0;
   }
 
   .timeline-content {
-    padding: 0.5rem;
-    background-color: #16161698;
-
-    border: 3px solid #f08c52;
-    border-radius: .25rem;
-    position: relative;
-    width: 90%;
-    color: rgba(232, 232, 232, 0.988);
-    z-index: 12;
-
+    padding-left: 40px;
+    /* Ensure content has space from the dot */
   }
-
-  .timeline-item:nth-child(even) .timeline-content {
-    left: 2%;
-  }
-
-  .timeline-item:nth-child(odd) .timeline-content {
-    left: 2%;
-  }
-
-  .tech-stack {
-
-
-    padding-left: 0.8rem;
-
-    padding-right: 0.8rem;
-
-
-  }
-
-  .image-effect {
-    width: 12.5rem;
-    height: 12.5rem;
-    margin-top: 2rem;
-
-  }
-
-
 }
