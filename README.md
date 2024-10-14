@@ -15,7 +15,7 @@ IT Desktop Support: Providing IT assistance and troubleshooting for various desk
 Contact Me: Get in touch for potential collaborations, freelance work, or job opportunities.
 
 Getting Started
-To explore my portfolio, simply visit [](https://lwandiletoto.netlify.app/) You can view my projects, learn about my skills, and reach out if you'd like to work together.
+To explore my portfolio, simply visit  https://lwandiletoto.netlify.app You can view my projects, learn about my skills, and reach out if you'd like to work together.
 
 Technologies Used:
  HTML5, CSS3, Bootstrap 5, Responsive design, SEO best practices
