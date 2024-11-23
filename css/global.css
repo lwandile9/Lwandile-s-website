@@ -159,10 +159,23 @@ body {
 
 }
 
+.xhosadev-link {
 
 
+  text-decoration: none;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: italic;
+
+}
+
+.xhosadev-link:hover {
+
+  text-decoration: underline;
+  font-weight: 900;
 
 
+}
 
 .progress-name {
 
