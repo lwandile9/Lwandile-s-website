@@ -210,6 +210,80 @@
 </div>
 </section>
 
+<section class="certification">
+  <div class="container py-5">
+    <h3 class="text-center mb-4">My Certificates</h3>
+    <p class="text-center">
+      Below are certifications I've earned that reflect my dedication to mastering software development skills and exploring new technologies.
+    </p>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <!-- Carousel Items -->
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active text-center">
+          <img src="./assets/images/certificates/SDLC.PNG" class="d-block mx-auto rounded" alt="Software Development Life Cycle" style="width: 70%; max-height: 450px;">
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item text-center">
+          <img src="./assets/images/certificates/hacker.PNG" class="d-block mx-auto rounded" alt="Software Engineer Intern Certificate" style="width: 70%; max-height: 450px;">
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item text-center">
+          <img src="./assets/images/certificates/google-sdlc.PNG" class="d-block mx-auto rounded" alt="Google Agile Project Management Certificate" style="width: 70%; max-height: 450px;">
+        </div>
+        <!-- Slide 4 -->
+        <div class="carousel-item text-center">
+          <img src="./assets/images/certificates/Full-stack-dev.jpg" class="d-block mx-auto rounded" alt="Full Stack Developer" style="width: 70%; max-height: 450px;">
+        </div>
+      </div>
+
+      <!-- Custom Slide Controls -->
+      <div class="d-flex justify-content-center mt-4">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="btn btn-outline-primary me-2 active">1</button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="btn btn-outline-primary me-2">2</button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="btn btn-outline-primary me-2">3</button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="btn btn-outline-primary">4</button>
+      </div>
+    </div>
+
+    <!-- Descriptions -->
+    <div class="mt-4 text-center">
+      <div id="description-0" class="description">
+        <h5>Software Development Life Cycle</h5>
+        <p>This certification demonstrates expertise in structured software development methodologies, including analysis, design, and testing phases.</p>
+      </div>
+      <div id="description-1" class="description d-none">
+        <h5>Software Engineer Intern Certificate</h5>
+        <p>Recognized for excelling in problem-solving, algorithm design, data structures, and implementing efficient solutions during my internship.</p>
+      </div>
+      <div id="description-2" class="description d-none">
+        <h5>Google Agile Project Management Certificate</h5>
+        <p>Acknowledges my ability to implement SDLC practices effectively, focusing on high-quality project delivery and collaboration.</p>
+      </div>
+      <div id="description-3" class="description d-none">
+        <h5>Full Stack Developer</h5>
+        <p>Showcases my proficiency in designing, developing, and deploying scalable web applications using modern full-stack technologies.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const carousel = document.querySelector('#carouselExampleIndicators');
+    const descriptions = document.querySelectorAll(".description");
+
+    carousel.addEventListener('slid.bs.carousel', (event) => {
+      descriptions.forEach((desc, index) => {
+        desc.classList.toggle('d-none', index !== event.to);
+      });
+    });
+  });
+</script>
+
+
+
 <!-- Projects Section -->
 <section class="projects py-5 bg-dark" id="projects">
   <div class="container">
@@ -292,7 +366,7 @@
           <div class="card-body">
             <h5 class="card-title">Eco Friendly Market Place</h5>
             <p class="card-text">A platform developed to encourage users to make money on something they dont need anymore.  (HTML , CSS and Boostrap 5)</p>
-            <a href="https://nkqayini-toto.netlify.app" class="btn btn-warning-outline">Check this project</a>
+            <a href="https://eco-market-95kb.vercel.app/" class="btn btn-warning-outline">Check this project</a>
           </div>
         </div>
       <!-- Card 7-->
